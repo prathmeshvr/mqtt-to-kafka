@@ -6,6 +6,6 @@ RUN mkdir app
 ADD req.txt /req.txt
 RUN pip install -r req.txt
 
-COPY mqttToKafka.py /app/mqttToKafka.py
+COPY mqtt-to-kafka.py /app/mqtt-to-kafka.py
 
-CMD ["python", "/app/mqttToKafka.py"]
+CMD ["python", "/app/mqtt-to-kafka.py"]
